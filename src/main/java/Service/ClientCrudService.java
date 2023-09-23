@@ -16,7 +16,6 @@ public class ClientCrudService {
             session.persist(client);
             long clientId = client.getId();
 
-//              long clientId =  session.persist(client);
             session.getTransaction().commit();
             return clientId;
         }
