@@ -13,7 +13,6 @@ public class HibernateUtil {
     private SessionFactory sessionFactory = new Configuration()
             .addAnnotatedClass(Client.class)
             .addAnnotatedClass(Planet.class)
-            //.configure("hibernate.properties")
             .buildSessionFactory();
 
     static {
